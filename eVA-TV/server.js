@@ -1,0 +1,28 @@
+var http = require('http');
+var app = require('./express');
+var https = require('https');
+var fs = require('fs');
+
+var cors = require('cors');
+app.use(cors());
+
+var httpsoptions = {
+   pfx: fs.readFileSync('./server.pfx'),
+   passphrase: 'vivi'
+};
+
+http.createServer(app)
+.listen(process.env.PORT || 3030, function() {
+	console.log('Servidor iniciado 3030');
+});
+
+// https.createServer(httpsoptions, app)
+//.listen(process.env.PORT || 3030, function() {
+//	console.log('Servidor iniciado');
+//});
+
+
+//var server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+//  var addr = server.address();
+//  logger.info("Servidor iniciado em", addr.address + ":" + addr.port);
+//});

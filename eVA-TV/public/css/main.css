@@ -1,0 +1,1089 @@
+﻿
+
+
+@media only screen and (max-device-width: 999px) {
+    .p-eva-vivi {
+        margin-bottom: 10px;
+        margin-top: -6px;
+        padding: 0 0 0 0;
+    }
+    #poupchat {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        background: white;
+        display: block !important;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;  
+    }
+    
+    #poupchat, .poupchat-vivo, #tel .input-everis, #texto, .scroll-everis {
+        box-sizing: content-box !important;
+    }
+    .img-vivo-chat {
+        width: 5%;
+        outline:none;
+        margin: 1%;
+    }
+    .img-vivo-direcao {
+        width: 34px;
+        margin-left: 86px;
+        margin-top: 0px;
+        position: absolute;
+        cursor: move;
+        display: none;
+    }
+    .top-seta {
+        background-image: url(../img/min-icon.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .top-seta-0 {
+        background-image: url(../img/min-icon-0.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .top-seta-1 {
+        background-image: url("../img/close-icon.png");
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .icon-chat-1 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 39px;
+        top: 14px;
+    }
+    .icon-chat-2 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 15px;
+        top: 14px;
+    }
+    .icon-chat-0 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 63px;
+        top: 14px;
+    }
+    .poupchat-vivo {
+        background: #f1f1f1;
+        height: 99%;
+        /* padding: 10px; */
+        width: 93%;
+        /* margin: 1%; */
+        right: 0px;
+        left: 0px;
+        position: fixed;
+        width: 100%;
+        overflow: auto;
+    }
+    .avatar {
+        background-color: #f7f7f7;
+        background-image: url(../img/avatarVivo.png);
+        background-repeat: no-repeat;
+        height: 238px;
+        border-radius: 6px;
+        background-size: 102%;
+        background-position-x: 4px;
+        background-position-y: -31px;
+    }
+    .beta {
+        background-image: url(../img/vivoBeta.png);
+        background-repeat: no-repeat;
+        height: 103px;
+        position: absolute;
+        width: 100px;
+        top: 51px;
+        ;
+        left: 14px;
+        background-size: 88%;
+    }
+    #tel {
+        background: #efe1f4;
+        padding: 12px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-size: 12px;
+        margin-top: 5px;
+        color: #545454;
+        border-radius: 6px;
+        line-height: 15px;
+        display: none !important;
+    }
+    .informacao {
+        background-image: url(../img/avIcon2.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        padding-left: 4px;
+        display: inline-block;
+        height: 20px;
+        width: 12px;
+        background-size: 100%;
+        margin-right: 6px;
+        font-size: 25px;
+    }
+    .input-everis {
+        width: 192px;
+        font-size: 15px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-color: #cccccc;
+        border-radius: 4px 0 0 4px;
+        border-style: solid none solid solid;
+        border-width: 1px 0 1px 1px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        margin-left: -11px;
+        height: 23px;
+    }
+    /* IE */
+    input::-ms-clear {
+        width: 0;
+        height: 0;
+    }
+    .button-everis {
+        width: 88px;
+        height: 46.2px !important;
+        font-size: 15px;
+        background: #6E2494;
+        color: white;
+        border-radius: 0 7px 5px 0;
+        padding: 1px 13px 1px 13px;
+        margin-left: -10px;
+        border: none;
+        cursor: pointer;
+    }
+    .button-everis-1 {
+        width: 22%;
+        /* height: 92.4px; */
+        font-size: 15px;
+        background: #6E2494 !important;
+        color: white !important;
+        border-radius: 0 7px 5px 0;
+        padding: 1px 13px 1px 13px;
+        /* margin-left: -4px;
+        */
+        border: none !important;
+        cursor: pointer;
+        font-family: Arial !important;
+        margin-top: 0 !important;
+        border: 0.5px #6E2494 solid !important;
+        float: right;
+        font-size: 15px;
+        height: 100%;
+    }
+    .scroll-everis {
+        height: 400px;
+        background: white;
+        border-radius: 8px;
+        width: 100%;
+        /* border: 0.5px solid #d4d4d4; */
+        overflow-y: auto;
+        overflow-x: hidden;
+        /* margin: 1%; */
+        height: 679px;
+        /* background:  red; */
+        /* position: absolute; */
+    }
+    .texto-vivi {
+        color: #762999;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        margin-bottom: 4px;
+        margin-top: 10px;
+        display: none;
+    }
+    .resposta-vivi {
+        outline: transparent;
+        color: black;
+        background: white;
+        border-radius: 12px 12px 12px 5px;
+        font-size: 100%;
+        position: relative;
+        line-height: normal;
+        border: 1px solid #666666;
+        float: left;
+        /* padding-right: 0px; */
+        padding-left: 10px;
+        font-family: 'Roboto', Helvetica, arial, sans-serif;
+        margin: 1%;
+        /* padding: 1%; */
+        font-size: 15px;
+        width: 93%;
+    }
+    .texto-watson {
+        position: relative;
+        top: -6px;
+        color: #6e2494;
+        font-size: 13px;
+        margin-left: -3px;
+    }
+    .icon-user {
+        background-image: url(../img/avIconUser.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        padding-left: 4px;
+        display: inline-block;
+        height: 18px;
+        width: 11px;
+        width: 14px;
+    }
+    .texto-user {
+        font-size: 12px;
+        margin-left: 0px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        color: rgb(0, 138, 179);
+        position: relative;
+        top: -6px;
+    }
+    .resposta-user {
+        color: white;
+        background: #784FA1;
+        display: inline-block;
+        border-radius: 15px 15px 5px 15px;
+        font-size: 100%;
+        padding-bottom: 13px;
+        padding-left: 15px;
+        padding-top: 13px;
+        position: relative;
+        line-height: normal;
+        border: 1px solid #e0e0e0;
+        float: right;
+        right: 0px;
+        padding-right: 15px;
+        font-family: 'Roboto', Helvetica, arial, sans-serif;
+        word-break: break-word;
+        margin: 1%;
+        margin-right: 2%;
+        font-size: 15px;
+    }
+    #texto {
+        width: 68%;
+        font-size: 16px;
+        padding: 0px 10px 0px 10px;
+        /* border-width: 1px 0 1px 1px; */
+        /* margin-left: 1%; */
+        /* margin-right: 1%; */
+        /* height: 73px; */
+        border: none;
+        outline: none;
+        font-size: 15px;
+        /* background-color: aquamarine !important; */
+        height: 100%;
+    }
+    #lis-poup {
+        color: #195fa1;
+        margin-left: 14px;
+        text-decoration: blink;
+    }
+    .poup-intent {
+        position: relative;
+        width: 93%;
+        padding-right: 6%;
+        /* margin-top: -602px; */
+        /* margin-left: -362px; */
+        border: 2px solid rgba(128, 128, 128, 0.38);
+        box-shadow: 0px 1px 13px 2px gray;
+        border-radius: 11px;
+        outline: transparent;
+        margin-left: 2px;
+        margin-right: 2%;
+        font-size: 15px !important;
+        height:  auto;
+        height: 99%;
+        /* z-index: 9999; */
+        background: white;
+        top: 0px !important;
+    }
+    .scroll-poup {
+        height: auto;
+        overflow: auto;
+        margin-top: 28px;
+        margin-left: 20px;
+        margin-bottom: 7px;
+        width: 97%;
+        font-size: 15px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-size: 15px;
+        /* height: 100px; */
+    }
+    .icon-x {
+        font-size: 15px;
+        position: absolute;
+        right: 9px;
+        top: 7px;
+        color: #10628A;
+    }
+    .icon-x:hover {
+        opacity: 0.6;
+    }
+    .assistent {
+        background-image: url(../img/openChat3D2.png);
+        background-repeat: no-repeat;
+        width: 194px;
+        height: 174px;
+        position: fixed;
+        top: 128px;
+        right: 0px;
+        background-size: 100%;
+        z-index: 999;
+        display: none !important;
+        opacity: 1;
+        top: 102px;
+    }
+    .assistent-disabled{
+        display: none;
+        cursor: default;
+    }
+    .icon-move-dow {
+        background-image: url(../img/draggable.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 35px;
+        height: 33px;
+        position: absolute;
+        left: 157px;
+        margin-top: 4px;
+        cursor: move;
+        display: none;
+    }
+    .font-everis {
+        position: fixed;
+        bottom: 30px;
+        right: 16px;
+        font-size: 11px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        color: #6e2494;
+        display: none;
+    }
+    .satisfacao {
+        width: 615px;
+        background: white;
+        position: fixed;
+        top: 60px;
+        left: 20%;
+        box-shadow: 33px 35px 61px 1px rgba(0, 0, 0, 0.65);
+        z-index: 9999;
+    }
+    .titulo-satisfacao {
+        padding: 28px;
+        font-size: 24px;
+        background: #6e2494;
+        color: white;
+    }
+    .titulo-texto {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    .icon-satis {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        font-size: 22px;
+    }
+    .icon-satis:hover {
+        opacity: 0.7;
+    }
+    .pergunta-satisfacao {
+        padding: 16px;
+        font-size: 18px;
+        margin-left: 2px;
+    }
+    .xix {
+        background-image: url(../img/xix.png);
+        width: 12px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 54px;
+    }
+    .satisx {
+        background-image: url(../img/close-icon.png);
+        width: 28px;
+        height: 30px;
+        margin-left: 32px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .resposta-satisfacao {
+        margin-top: 21px;
+        font-size: 27px;
+    }
+    .resposta-satisfacao-input {
+        zoom: 1;
+    }
+    .font-satisfacao-check {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+    .button-satisfacao {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 69%;
+        width: 130px;
+        font-size: 17px;
+        padding: 8px;
+        background: #6e2494;
+        color: white;
+        border-radius: 9px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    #feedback-satisfacao {
+        width: 100%;
+        height: 368px;
+    }
+    .texto-area-satisfacao {
+        width: 488px;
+        margin-left: 51px;
+        height: 148px;
+        font-size: 16px;
+    }
+    .ultima-button-satisfacao {
+        position: relative;
+        margin-top: 0px;
+        width: 84px;
+        font-size: 17px;
+        padding: 9px;
+        background: #6e2494;
+        color: white;
+        border-radius: 9px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    .enviar-ultima {
+        margin-left: 407px;
+        margin-top: 22px;
+    }
+    .seta-poup:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 16px solid rgba(113, 111, 111, 0.53);
+        right: -17px;
+        position: absolute;
+        box-shadow: 0px 1px 13px 2px rgba(128, 128, 128, 0);
+        bottom: 19px;
+    }
+    #seta {
+        font: 14px sans-serif;
+        display: block;
+        padding-top: 10px;
+    }
+    .seta-vivi {
+        font: 14px sans-serif;
+        display: block;
+        padding-top: 10px !important;
+        position: absolute !important;
+        margin-left: -1px !important;
+        transform: rotate(180deg) !important;
+        margin-top: -54px !important;
+    }
+    .margin-top5px {
+        margin-top: 13px;
+    }
+    #chat{
+        display: block !important;
+    }
+    .video{
+        width: 100%;
+        border-radius: 35px;
+        /* display: none; */
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 34%;
+        
+    }
+    .chat-message{
+        display: inline-block;
+        width: 100%;
+        /* margin: 1%; */
+    }
+    .input-box-vivi{
+        width: 98%;
+        background: white;
+        border-radius: 8px;
+        border: 0.5px #6E2494 solid;
+        overflow: hidden;
+        position:  fixed;
+        bottom: 0;
+        left: 0;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        height: 7%;
+    }
+    
+    .top-chat{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-device-width: 1000px) {
+    .p-eva-vivi {
+        margin-bottom: 10px;
+        margin-top: -6px;
+        padding: 0 0 0 0;
+    }
+    #poupchat {
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+        background: white;
+        display: block !important;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    #poupchat, .poupchat-vivo, #tel .input-everis, #texto, .scroll-everis {
+        box-sizing: content-box !important;
+    }
+    .img-vivo-chat {
+        width: 5%;
+        outline:none;
+        margin: 1%;
+    }
+    .img-vivo-direcao {
+        width: 34px;
+        margin-left: 86px;
+        margin-top: 0px;
+        position: absolute;
+        cursor: move;
+        display: none;
+    }
+    .top-seta {
+        background-image: url(../img/min-icon.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .top-seta-0 {
+        background-image: url(../img/min-icon-0.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .top-seta-1 {
+        background-image: url("../img/close-icon.png");
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 37px;
+        display: none;
+    }
+    .icon-chat-1 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 39px;
+        top: 14px;
+    }
+    .icon-chat-2 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 15px;
+        top: 14px;
+    }
+    .icon-chat-0 {
+        background: #8e3c87;
+        border-radius: 5px;
+        position: absolute;
+        right: 63px;
+        top: 14px;
+    }
+    .poupchat-vivo {
+        background: #f1f1f1;
+        height: 89%;
+        padding: 10px;
+        width: 96%;
+        margin: 1%;
+        border: 0.5px #6E2494 solid;
+        right: 0px;
+        left: 0px;
+        position: fixed;
+        overflow: auto;
+        /* background:  black; */
+    }
+    .avatar {
+        background-color: #f7f7f7;
+        background-image: url(../img/avatarVivo.png);
+        background-repeat: no-repeat;
+        height: 238px;
+        border-radius: 6px;
+        background-size: 102%;
+        background-position-x: 4px;
+        background-position-y: -31px;
+    }
+    .beta {
+        background-image: url(../img/vivoBeta.png);
+        background-repeat: no-repeat;
+        height: 103px;
+        position: absolute;
+        width: 100px;
+        top: 51px;
+        ;
+        left: 14px;
+        background-size: 88%;
+    }
+    #tel {
+        background: #efe1f4;
+        padding: 12px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-size: 12px;
+        margin-top: 5px;
+        color: #545454;
+        border-radius: 6px;
+        line-height: 15px;
+        display: none !important;
+    }
+    .informacao {
+        background-image: url(../img/avIcon2.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        padding-left: 4px;
+        display: inline-block;
+        height: 20px;
+        width: 12px;
+        background-size: 100%;
+        margin-right: 6px;
+        font-size: 25px;
+    }
+    .input-everis {
+        width: 192px;
+        font-size: 15px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-color: #cccccc;
+        border-radius: 4px 0 0 4px;
+        border-style: solid none solid solid;
+        border-width: 1px 0 1px 1px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        margin-left: -11px;
+        height: 23px;
+    }
+    /* IE */
+    input::-ms-clear {
+        width: 0;
+        height: 0;
+    }
+    .button-everis {
+        width: 88px;
+        height: 46.2px !important;
+        font-size: 15px;
+        background: #6E2494;
+        color: white;
+        border-radius: 0 7px 5px 0;
+        padding: 1px 13px 1px 13px;
+        margin-left: -10px;
+        border: none;
+        cursor: pointer;
+    }
+    .button-everis-1 {
+        width: 16%;
+        /* height: 92.4px; */
+        font-size: 15px;
+        background: #6E2494 !important;
+        color: white !important;
+        border-radius: 0 7px 5px 0;
+        padding: 1px 13px 1px 13px;
+        /* margin-left: -4px;
+        */
+        border: none !important;
+        cursor: pointer;
+        font-family: Arial !important;
+        margin-top: 0 !important;
+        border: 0.5px #6E2494 solid !important;
+        float: right;
+        font-size: 24pt;
+        height: 100%;
+    }
+    .scroll-everis {
+        height: 400px;
+        background: white;
+        border-radius: 8px;
+        width: 98%;
+        border: 0.5px solid #d4d4d4;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 1%;
+        height: 1270pt;
+        /* background:  red; */
+        -webkit-overflow-scrolling: touch;
+        /* touch-action: pan-up !important; */
+        /* touch-action: pan-down; */
+        touch-action: pan-y;
+    }
+    .texto-vivi {
+        color: #762999;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        margin-bottom: 4px;
+        margin-top: 10px;
+        display: none;
+    }
+    .resposta-vivi {
+        outline: transparent;
+        color: black;
+        background: white;
+        border-radius: 12px 12px 12px 5px;
+        font-size: 100%;
+        position: relative;
+        line-height: normal;
+        border: 1px solid #666666;
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-family: 'Roboto', Helvetica, arial, sans-serif;
+        margin: 1%;
+        padding: 1%;
+        font-size: 20pt;
+    }
+    .texto-watson {
+        position: relative;
+        top: -6px;
+        color: #6e2494;
+        font-size: 13px;
+        margin-left: -3px;
+    }
+    .icon-user {
+        background-image: url(../img/avIconUser.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        padding-left: 4px;
+        display: inline-block;
+        height: 18px;
+        width: 11px;
+        width: 14px;
+    }
+    .texto-user {
+        font-size: 12px;
+        margin-left: 0px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        color: rgb(0, 138, 179);
+        position: relative;
+        top: -6px;
+    }
+    .resposta-user {
+        color: white;
+        background: #784FA1;
+        display: inline-block;
+        border-radius: 15px 15px 5px 15px;
+        font-size: 100%;
+        padding-bottom: 13px;
+        padding-left: 15px;
+        padding-top: 13px;
+        position: relative;
+        line-height: normal;
+        border: 1px solid #e0e0e0;
+        float: right;
+        right: 0px;
+        padding-right: 15px;
+        font-family: 'Roboto', Helvetica, arial, sans-serif;
+        word-break: break-word;
+        margin: 1%;
+        margin-right: 2%;
+        font-size: 24pt;
+    }
+    #texto {
+        width: 80%;
+        font-size: 16px;
+        padding: 0px 10px 0px 10px;
+        /* border-width: 1px 0 1px 1px; */
+        /* margin-left: 1%; */
+        /* margin-right: 1%; */
+        /* height: 73px; */
+        border: none;
+        outline: none;
+        font-size: 24pt;
+        /* background-color: aquamarine !important; */
+        height: 100%;
+    }
+    #lis-poup {
+        color: #195fa1;
+        margin-left: 14px;
+        text-decoration: blink;
+    }
+    .poup-intent {
+        position: relative;
+        width: 80%;
+        background: white;
+        /* margin-top: -602px; */
+        /* margin-left: -362px; */
+        border: 2px solid rgba(128, 128, 128, 0.38);
+        box-shadow: 0px 1px 13px 2px gray;
+        border-radius: 11px;
+        outline: transparent;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 24pt;
+        height:  auto;
+    }
+    .scroll-poup {
+        height: auto;
+        overflow: auto;
+        margin-top: 28px;
+        margin-left: 20px;
+        margin-bottom: 7px;
+        width: 97%;
+        font-size: 15px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-size: 24pt;
+        /* height: 100px; */
+    }
+    .icon-x {
+        font-size: 15px;
+        position: absolute;
+        right: 9px;
+        top: 7px;
+        color: #10628A;
+    }
+    .icon-x:hover {
+        opacity: 0.6;
+    }
+    .assistent {
+        background-image: url(../img/openChat3D2.png);
+        background-repeat: no-repeat;
+        width: 194px;
+        height: 174px;
+        position: fixed;
+        top: 128px;
+        right: 0px;
+        background-size: 100%;
+        z-index: 999;
+        display: none !important;
+        opacity: 1;
+        top: 102px;
+    }
+    .assistent-disabled{
+        display: none;
+        cursor: default;
+    }
+    .icon-move-dow {
+        background-image: url(../img/draggable.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 35px;
+        height: 33px;
+        position: absolute;
+        left: 157px;
+        margin-top: 4px;
+        cursor: move;
+        display: none;
+    }
+    .font-everis {
+        position: fixed;
+        bottom: 30px;
+        right: 16px;
+        font-size: 11px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        color: #6e2494;
+        display: none;
+    }
+    .satisfacao {
+        width: 615px;
+        background: white;
+        position: fixed;
+        top: 60px;
+        left: 20%;
+        box-shadow: 33px 35px 61px 1px rgba(0, 0, 0, 0.65);
+        z-index: 9999;
+    }
+    .titulo-satisfacao {
+        padding: 28px;
+        font-size: 24px;
+        background: #6e2494;
+        color: white;
+    }
+    .titulo-texto {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    .icon-satis {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        font-size: 22px;
+    }
+    .icon-satis:hover {
+        opacity: 0.7;
+    }
+    .pergunta-satisfacao {
+        padding: 16px;
+        font-size: 18px;
+        margin-left: 2px;
+    }
+    .xix {
+        background-image: url(../img/xix.png);
+        width: 12px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 54px;
+    }
+    .satisx {
+        background-image: url(../img/close-icon.png);
+        width: 28px;
+        height: 30px;
+        margin-left: 32px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .resposta-satisfacao {
+        margin-top: 21px;
+        font-size: 27px;
+    }
+    .resposta-satisfacao-input {
+        zoom: 1;
+    }
+    .font-satisfacao-check {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+    .button-satisfacao {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 69%;
+        width: 130px;
+        font-size: 17px;
+        padding: 8px;
+        background: #6e2494;
+        color: white;
+        border-radius: 9px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    #feedback-satisfacao {
+        width: 100%;
+        height: 368px;
+    }
+    .texto-area-satisfacao {
+        width: 488px;
+        margin-left: 51px;
+        height: 148px;
+        font-size: 16px;
+    }
+    .ultima-button-satisfacao {
+        position: relative;
+        margin-top: 0px;
+        width: 84px;
+        font-size: 17px;
+        padding: 9px;
+        background: #6e2494;
+        color: white;
+        border-radius: 9px;
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    }
+    .enviar-ultima {
+        margin-left: 407px;
+        margin-top: 22px;
+    }
+    .seta-poup:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 16px solid rgba(113, 111, 111, 0.53);
+        right: -17px;
+        position: absolute;
+        box-shadow: 0px 1px 13px 2px rgba(128, 128, 128, 0);
+        bottom: 19px;
+    }
+    #seta {
+        font: 14px sans-serif;
+        display: block;
+        padding-top: 10px;
+    }
+    .seta-vivi {
+        font: 14px sans-serif;
+        display: block;
+        padding-top: 10px !important;
+        position: absolute !important;
+        margin-left: -1px !important;
+        transform: rotate(180deg) !important;
+        margin-top: -54px !important;
+    }
+    .margin-top5px {
+        margin-top: 13px;
+    }
+    #chat{
+        display: block !important;
+    }
+    .video{
+        width: 100%;
+        border-radius: 35px;
+        display: none;
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 34%;
+       
+    }
+    .chat-message{
+        display: inline-block;
+        width: 100%;
+        margin: 1%;
+    }
+    .input-box-vivi{
+        width: 97%;
+        background: white;
+        border-radius: 8px;
+        border: 0.5px #d4d4d4 solid;
+        border: 0.5px #6E2494 solid;
+        /* margin: 1%; */
+        overflow: hidden;
+        position:  fixed;
+        bottom: 0;
+        left: 0;
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        /* margin: 2%; */
+        height: 7%;
+    }
+    
+    .top-chat{
+        display: none;
+    }
+}
