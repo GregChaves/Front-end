@@ -1,5 +1,6 @@
 //url de origem dos assets
 var origin_url = '//localhost:8080';
+//var origin_url = '//35.188.192.132';
 
 //broker url
 //var broker_endpoint = '//35.196.226.28:8080/conversations/';
@@ -130,19 +131,19 @@ function chatJQueryCode() {
 //monta video
   var BuildVideoLoading = function () {
 
-  var source0 = $('<source>').attr({'src': 'http://localhost:8080/assets/video/02_VIVI_REPOUSO_NEW.mp4','type': 'video/mp4'});
+  var source0 = $('<source>').attr({'src': origin_url + '/assets/video/02_VIVI_REPOUSO_NEW.mp4','type': 'video/mp4'});
   var video0 = $('<video>').attr({'id': 'video0','loop': 'true'}).addClass('video');
   video0.append(source0);
 
-  var source1 = $('<source>').attr({'src': 'http://localhost:8080/assets/video/01_VIVI_APRESENTACAO_NEW.mp4','type': 'video/mp4'});
+  var source1 = $('<source>').attr({'src': origin_url + '/assets/video/01_VIVI_APRESENTACAO_NEW.mp4','type': 'video/mp4'});
   var video1 = $('<video>').attr({'id': 'video1','style': 'display:none;'}).addClass('video');
   video1.append(source1);
 
-  var source2 = $('<source>').attr({'src': 'http://localhost:8080/assets/video/07_VIVO_RESPOSTA_POSITIVA_3_NEW.mp4','type': 'video/mp4'});
+  var source2 = $('<source>').attr({'src': origin_url + '/assets/video/07_VIVO_RESPOSTA_POSITIVA_3_NEW.mp4','type': 'video/mp4'});
   var video2 = $('<video>').attr({'id': 'video2','style': 'display:none;'}).addClass('video');
   video2.append(source2);
 
-  var source3 = $('<source>').attr({'src': 'http://localhost:8080/assets/video/06_VIVO_ENCERRAMENTO_OBRIGADO_NEW.mp4','type': 'video/mp4'});
+  var source3 = $('<source>').attr({'src': origin_url + '/assets/video/06_VIVO_ENCERRAMENTO_OBRIGADO_NEW.mp4','type': 'video/mp4'});
   var video3 = $('<video>').attr({'id': 'video3','style': 'display:none;'}).addClass('video');
   video3.append(source3);
 
@@ -487,8 +488,11 @@ function chatJQueryCode() {
         'text': (typeof (msgToSend) == 'string' ? msgToSend : input.val()),
         'context': getLastContext()
       };
-        sendMsgToBrokerWithSessionCode(message, true); //se recebeu algo no submit do usuario
-        input.val('');
+
+        if(input.val().trim() != '') {
+        	sendMsgToBrokerWithSessionCode(message, true);
+        	input.val('');
+      }
       //}
     }
     return sendMessage;
