@@ -1,0 +1,100 @@
+
+$msg-color: $text;
+$like-color: $primary;
+
+.eva-msg-icon {
+  width: 64px;
+  position: absolute;
+  top: -6px;
+  left: 4px;
+}
+
+.eva-msg-wrap-bot {
+  display: inline-block;
+  padding: 15px;
+  margin: 0px 10px 0 82px;
+  border-radius: 0 10px 10px 10px;
+  color: $msg-color;
+  font-weight: 200;
+  font-size: 13px; //Alterado para 13px
+  background-color: white;
+  &:before{
+    position: absolute;
+    left: 70px;
+    top: 0;
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 100;
+
+    border-top: 0px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid white;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+  }
+}
+
+.eva-msg-bot-like {
+  &-wrap {
+    position: relative;
+    display: inline-block;
+    height: 17px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  &-icons {
+    float: right;
+    img {
+      cursor: pointer;
+    }
+  }
+  &-icon {
+    &-like {
+      margin-left: 12px;
+    }
+    &-unlike {
+      margin-left: 6px;
+    }
+    &-like,
+    &-unlike {
+      max-height: 16px;
+      max-width: 16px;
+    }
+  }
+  &-text {
+    position: relative;
+    display: inline-block;
+    color: $like-color;
+    font-size: 11px;
+    line-height: 17px;
+    height: 17px;
+  }
+}
+
+.eva-msg-list {
+  list-style: none;
+  padding: 0;
+}
+
+.eva-msg-buttons {
+  margin: 8px -8px 0 -8px;
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 4px 0 0;
+    button {
+      text-align: center;
+      min-width: 34%;
+    }
+  }
+}
+
+#chatTypingGif{
+  width: 25px;
+}

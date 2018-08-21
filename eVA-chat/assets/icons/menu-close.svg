@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Buttons / Contact / Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28" cy="28" r="28"></circle>
+        <filter x="-12.5%" y="-8.9%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Buttons-/-Contact-/-Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Info">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#27BDBE" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Icons-/-White-/-close-thin" transform="translate(20.000000, 20.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M15.0150476,0.2199375 C14.7171429,-0.0733125 14.235619,-0.0733125 13.9377143,0.2199375 L7.6192381,6.4396875 L1.3007619,0.2199375 C1.00285714,-0.0733125 0.521333333,-0.0733125 0.223428571,0.2199375 C-0.0744761905,0.5131875 -0.0744761905,0.9871875 0.223428571,1.2804375 L6.54190476,7.5001875 L0.223428571,13.7199375 C-0.0744761905,14.0131875 -0.0744761905,14.4871875 0.223428571,14.7804375 C0.372,14.9266875 0.567047619,15.0001875 0.762095238,15.0001875 C0.957142857,15.0001875 1.15219048,14.9266875 1.3007619,14.7804375 L7.6192381,8.5606875 L13.9377143,14.7804375 C14.0862857,14.9266875 14.2813333,15.0001875 14.476381,15.0001875 C14.6714286,15.0001875 14.8664762,14.9266875 15.0150476,14.7804375 C15.3129524,14.4871875 15.3129524,14.0131875 15.0150476,13.7199375 L8.69657143,7.5001875 L15.0150476,1.2804375 C15.3129524,0.9871875 15.3129524,0.5131875 15.0150476,0.2199375 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

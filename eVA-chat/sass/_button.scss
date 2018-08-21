@@ -1,0 +1,29 @@
+
+$btn-color: $secondary;
+
+.eva-btn {
+  @include transition(background-color .4s linear);
+  border-radius: 8px;
+  border: 1px $btn-color solid;
+  margin: 2px 0px 0px 9px;
+  padding: 10px 16px;
+  width: auto;
+  overflow: visible;
+  background: white;
+  color: $btn-color;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  line-height: 14px;
+  &:focus, &:active {
+    outline: none;
+    background-color: $btn-color;
+    color: white;
+  }
+  &-wrap {
+    margin: 8px -8px;
+  }
+}
+    

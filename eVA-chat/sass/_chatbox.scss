@@ -1,0 +1,251 @@
+
+$header-background-from: $primary;
+$header-background-to: $secondary;
+$body-background: $background-light;
+$header-background-mobile: $quaternary;
+
+.eva-chatbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  @include transition(all .4s ease-in-out);
+  &.eva-chatbox-visible {
+    display: inline-block;
+  }
+  &-icon {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    @include transition(box-shadow .4s);
+    display: flex;
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    bottom: 40px;
+    right: 5%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    }
+  }
+  &-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, .4);
+    z-index: 1;
+    color: white;
+    @include transition(height .4s ease-in-out);
+    .inner {
+      line-height: 14px;
+      font-size: 14px;
+      width: 100%;
+      padding: 16px 22px;
+      box-sizing: border-box;
+    }
+  }
+  &-closebtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  &-logotipo {
+    height: 15px;
+  }
+  &-body {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 65px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: $body-background;
+    @include transition(left .6s ease, opacity .6s ease);
+    .inner {
+      width: 100%;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+    &.eva-chatbox-body-tabs {
+      top: 83px;      
+    }
+    &-iframe {
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  &-footer {
+    @include border-radius (0 0 10px 10px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    @include transition(left .6s ease, opacity .6s ease);
+    .inner {
+      @include border-radius (0 0 10px 10px);
+      width: 100%;
+      height: 65px;
+      box-sizing: border-box;
+      padding: 18px 48px 18px 22px;
+      input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        &:disabled{
+          background: white;
+        }
+      }
+    }
+  }
+  &-sendbtn {
+    position: absolute;
+    top: 22px;
+    right: 16px;
+    cursor: pointer;
+  }
+}
+
+.eva-messages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    padding: 0;
+    margin: 8px 0;
+    display: block;
+    position: relative;
+    &:after {
+      clear: both; 
+      content: "";
+      display: table; 
+    }
+  }
+}
+
+/* CHATBOX DATE DISPLAY */
+h6#eva-chatbox-date-display {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  opacity: 0.4;
+}
+
+@media (max-width: 767px) { //MOBILE
+  .eva-chatbox {
+    background: #f0f0f0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &-fullheightbtn {
+      display: none;
+    }
+  }
+  .eva-chatbox-header {
+    background-color: $header-background-mobile;
+  }
+
+.video{
+        width: 100%;
+        border-radius: 35px;
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 34%;
+    }
+
+}
+
+@media (min-width: 768px) { //TABLET E DESKTOP
+
+.video{
+        width: 100%;
+        border-radius: 35px;
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 34%;
+    }
+
+  .eva-chatbox {
+    background: #f0f0f0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.2), -4px 4px 10px 0px rgba(0, 0, 0, 0.2), 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+    @include border-radius (10px 10px 10px 10px);
+    &.eva-chatbox-tabs {
+      height: 523px; //490 +33 
+      overflow: hidden;
+    }
+    &-body-iframe {
+      overflow: hidden;
+      @include border-radius (0 0 10px 10px);
+    }
+    &-fullheightbtn {
+      position: absolute;
+      top: 12px;
+      right: 40px;
+      cursor: pointer;
+      max-width: 24px;
+      max-height: 24px;
+    }
+    &[position=right],
+    &[position=bottom-right],
+    &[position=right-bottom],
+    &[position=bottom] {
+      right: $position-right;
+      bottom: $position-bottom;
+    }
+    &[position=left],
+    &[position=bottom-left],
+    &[position=left-bottom] {
+      left: $position-left;
+      bottom: $position-bottom;
+    }
+    &[position=top],
+    &[position=top-right],
+    &[position=right-top] {
+      right: $position-right;
+      top: $position-top;
+    }
+    &[position=top-left],
+    &[position=left-top] {
+      left: $position-left;
+      top: $position-top;
+    }
+    &.eva-fullheight {
+      height: 100%;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .eva-chatbox-header {
+    @include border-radius (10px 10px 0 0);
+    background: linear-gradient(to right, $header-background-from, $header-background-to);
+    .inner {
+      @include border-radius (10px 10px 0 0);
+    }
+  }
+  .eva-chatbox-footer {
+    @include css3-prefix('box-shadow', 0px -2px 16px 0px rgba(0, 0, 0, .1));
+    .inner {
+      @include css3-prefix('box-shadow', 0px -2px 16px 0px rgba(0, 0, 0, .1));
+    }
+  }
+}

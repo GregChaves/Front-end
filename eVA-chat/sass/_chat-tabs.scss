@@ -1,0 +1,51 @@
+
+$tabs-background: $background-light;
+
+$tabs-color: $text;
+$tabs-color-active: $primary;
+
+$tabs-border: $background-light;
+$tabs-border-active: $primary;
+
+.eva-tabs {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 33px;
+  background-color: $tabs-background;
+  color: $tabs-color;
+  text-align: center;
+  &-wrap {
+    box-sizing: content-box;
+    border-bottom: 3px $tabs-border solid;
+    width: 50%; ////Novo
+    display: inline-block; ////Novo
+
+    &.active {
+      border-bottom-color: $tabs-border-active;
+      p {
+        color: $tabs-color-active;
+      }
+    }
+  }
+  p {
+    margin: 8px 0;
+    line-height: 14px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.eva-chatbox-body-iframe {
+  border: none;
+  top: 83px;
+  left: 0;
+  right: 0;
+  bottom: 65px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: $body-background;
+  @include transition(left .6s ease, opacity .6s ease);
+}

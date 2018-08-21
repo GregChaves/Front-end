@@ -1,0 +1,227 @@
+
+$menu-background-icon: $tertiary;  
+
+@media only screen and (max-width: 600px) {
+  .eva-hide-loading {
+      display : none !important;
+  }
+}
+
+.eva-chatbox-menu {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  height: 60px;
+  width: 60px;
+  @include transition(all .3s linear);
+  &[position=right],
+  &[position=bottom-right],
+  &[position=right-bottom],
+  &[position=bottom] {
+    right: $position-right;
+    bottom: $position-bottom;
+  }
+  &[position=left],
+  &[position=bottom-left],
+  &[position=left-bottom] {
+    left: $position-left;
+    bottom: $position-bottom;
+  }
+  &[position=top],
+  &[position=top-right],
+  &[position=right-top] {
+    right: $position-right;
+    top: $position-top;
+  }
+  &[position=top-left],
+  &[position=left-top] {
+    left: $position-left;
+    top: $position-top;
+  }
+  &.eva-fullheight {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+&.eva-chatbox-menu-visible{
+    display: inline-block;
+  }
+  &.eva-chatbox-menu-big {
+    .eva-chatbox-menu-list {
+      @extend .cc-shadow-3;
+      li {
+        height: 40px;
+        width: 40px;
+        &:hover {
+          border: none;
+        }
+        img {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &-list {
+    @include transition(all .3s linear);
+    padding: 0;
+    background-color: white;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+    @extend .cc-shadow-1;
+    li {
+      @include transition(all .3s linear);
+      @include border-radius(20px);
+      margin-top: 3px;
+      cursor: pointer;
+      height: 1px;
+      width: 1px;
+      line-height: 18px;
+      img {
+        @include transition(all .3s linear);
+        display: none;
+        box-sizing: content-box;
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $menu-background-icon;
+    // -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+    @include user-select(none);
+    @include border-radius(30px);
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    box-shadow: none !important;
+    //@extend .cc-shadow-2;
+    // &:hover {
+    //   @extend .cc-shadow-4;
+    // }
+    img {
+      max-height: 36px;
+      max-width: 36px;
+    }
+  }
+  &-logo-open {
+    width: 200px;
+    height: 60px;
+    background: rgba(38,189,190,1);
+    border-radius: 50px;
+    float: right;
+    @extend .cc-shadow-2;
+    &:hover {
+      @extend .cc-shadow-4;
+    }
+  }
+  &-logo-open-parag {
+    margin-top: 20px;
+    margin-left: 14px;
+    color: white;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  &-logo-closed {
+    @extend .cc-shadow-2;
+    &:hover {
+      @extend .cc-shadow-4;
+    }
+  }
+}
+
+//ALTERA OPACIDADE DO BG QUANDO O MENU ESTÁ ABERTO
+// .eva-chatbox-menu-big-bg {
+//     //display: none;
+//     position: fixed;
+//     z-index: 1;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: auto;
+//     background-color: rgba(0,0,0,0.5);
+// }
+
+@media (max-width: 767px) { //MOBILE
+  .eva-chatbox-menu-list {
+    width: 46px;
+    right: 7px;
+    bottom: 25px;
+    @include border-radius(12px 12px 0 0);
+    li {
+      display: block;
+    } 
+  }
+  .eva-chatbox-menu.eva-chatbox-menu-big { //quando esta aberto
+    height: 240px;
+    .eva-chatbox-menu-list {
+      padding: 0 0 36px 0;
+      bottom: 25px;
+      li {
+        margin-bottom: 16px;
+        margin-left: 3.5px;
+      } 
+    }
+   }
+}
+@media (min-width: 768px) { //TABLET E DESKTOP
+  .eva-chatbox-menu-logo {
+    top: 0;
+  }
+  .eva-chatbox-menu {
+    &[position=right],
+    &[position=bottom-right],
+    &[position=right-bottom],
+    &[position=bottom],
+    &[position=top],
+    &[position=top-right],
+    &[position=right-top] {
+      .eva-chatbox-menu-list {
+        right: 30px;
+      }
+    }
+    &[position=left],
+    &[position=bottom-left],
+    &[position=left-bottom],
+    &[position=top-left],
+    &[position=left-top] {
+      .eva-chatbox-menu-list {
+        left: 30px;
+      }
+    }  
+  }
+  .eva-chatbox-menu-list {
+    height: 45px;
+    @include border-radius(12px 0 0 12px);
+    li {
+      display: inline-block;
+    }
+  }
+  .eva-chatbox-menu.eva-chatbox-menu-big { //quando esta aberto
+    width: 240px;
+    &[position=left],
+    &[position=bottom-left],
+    &[position=left-bottom],
+    &[position=top-left],
+    &[position=left-top] {
+      .eva-chatbox-menu-list {
+        left: 0;
+      }
+    }  
+    .eva-chatbox-menu-list {
+      padding: 0 36px 0 0;
+      li {
+        margin-left: 16px;
+      }
+    }
+  }
+}
